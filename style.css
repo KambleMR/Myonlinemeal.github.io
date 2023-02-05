@@ -1,0 +1,234 @@
+/* Css Resat */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+/* Logo and Image*/
+
+#logo{
+    margin:34px 20px;
+}
+#logo img{
+    height: 50px;
+    box-sizing: content-box;
+    margin:3px 5px;
+    border-radius: 20px;
+    
+
+}
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    padding:3px 22px;
+    color:rgb(239, 231, 231);
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+  background-color: white;
+    color:rgb(35, 33, 33);
+    box-shadow: 2px 3px rgb(173, 171, 171);
+    font-size: 15;
+    
+}
+
+/* Home section  */
+/* #home::after{
+    content: "Mukesh";
+    top: 0;
+    left: 0;
+} */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 311px;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+#home::before
+{
+    content: "";
+   background:url('images/weg3.jpg') no-repeat center center/cover;
+    position:absolute;
+    top: -80px;
+    bottom: 100px;
+    height: 474px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.79; */
+}
+
+#home h1{
+    color:rgb(238, 230, 241);
+    text-align:center;
+    font-family: 'Righteous', cursive;
+}
+#home p{
+    color:rgb(165, 163, 143);
+    text-align:center;
+    font-size: 1.5rem ;
+    font-family: 'Righteous', cursive;
+}
+/* Services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border:2px solid rgb(12, 10, 10);
+    padding:34px;
+    margin:4px 7px;
+    border-radius: 28px;
+    background: rgb(205, 195, 195);
+}
+#services .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+   
+}
+#services .box p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Clients Section  */
+#client-section{
+  height: 344px;
+}
+#client-section::before{
+ content:"";
+ position:absolute;
+ background: url('images/vegibg.jpg');
+ width:100%;
+ height: 300px;
+ z-index: -1;
+ opacity:0.8 ;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+.client-item{
+    padding:34px;
+
+}
+/* Contact section  */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('images/contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+ 
+
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size:2.9rem ;
+    padding:12px;
+    font-family: 'Righteous', cursive;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding:12px;
+    font-family: 'Righteous', cursive;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 2px 5px rgb(120, 70, 70);
+    font-size: 25px;
+}
+.center{
+    text-align: center;
+}
+#services .box{
+    box-shadow: 8px 10px gray;
+}
